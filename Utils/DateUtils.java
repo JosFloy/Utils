@@ -1,5 +1,3 @@
-package com.mingrisoft.flowersdemo.ui.utils;
-
 import android.support.annotation.NonNull;
 
 import java.text.DateFormat;
@@ -13,7 +11,7 @@ import java.util.Locale;
 /**
  * 日期工具类，具有获取日期、转换字符串、格式化、比较等等一系列功能
  */
-public class GetDateUtils {
+public class DateUtils {
 
     private static final String FORMAT = "yyyy-MM-dd HH:mm:ss";
     private static final SimpleDateFormat datetimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

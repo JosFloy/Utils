@@ -1,4 +1,3 @@
-package com.zeuschan.littlefreshweather.common.util;
 
 import android.app.Service;
 import android.content.Context;
@@ -6,7 +5,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 /**
- * Created by chenxiong on 2016/6/17.
+ * Net相关Util 判断网络是否有效
  */
 public class NetUtil {
     public static boolean isNetworkAvailable(Context context) {

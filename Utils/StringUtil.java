@@ -1,5 +1,3 @@
-package com.zeuschan.littlefreshweather.common.util;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.ParseException;
@@ -8,7 +6,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
- * Created by chenxiong on 2016/6/17.
+ * String相关Util 包括日期，HexString
  */
 public class StringUtil {
     public static String bytesToMd5String(byte[] bytes) {

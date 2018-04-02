@@ -1,11 +1,9 @@
-package com.zeuschan.littlefreshweather.common.util;
-
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 /**
- * Created by chenxiong on 2016/6/16.
+ * PackageManager相关Util 获取AppVersion
  */
 public class PackageUtil {
     public static int getAppVersion(Context context) {

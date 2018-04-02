@@ -1,10 +1,7 @@
-package com.mingrisoft.flowersdemo.ui.utils;
-
 import android.util.Log;
 
 /**
- * Log统一管理类-->上网下载现成的就可以
- * 一搜索一大把
+ * Log统一管理类-->整合改进 
  */
 public class UtilLog
 {
