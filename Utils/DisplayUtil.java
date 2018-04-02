@@ -1,4 +1,7 @@
+package com.mingrisoft.flowersdemo.ui.utils;
+
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
@@ -6,31 +9,28 @@ import android.view.WindowManager;
  * 获取显示相关信息，
  */
 public class DisplayUtil {
-
-	public static DisplayMetrics getDisplayMetrics(Context context){
-		WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-		DisplayMetrics dm = new DisplayMetrics();
-		wm.getDefaultDisplay().getMetrics(dm);
-		return dm;
-	}
-	public static int getSreenWidth(Context context) {
-		WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-		DisplayMetrics dm = new DisplayMetrics();
-		wm.getDefaultDisplay().getMetrics(dm);
+	
+	public static int getScreenWidth(Context context) {
+		DisplayMetrics dm = getDisplayMetrics(context);
 		return dm.widthPixels;
 	}
 
-	public static int getSreenHeight(Context context) {
+	@NonNull
+	private static DisplayMetrics getDisplayMetrics(Context context) {
 		WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
 		DisplayMetrics dm = new DisplayMetrics();
+		assert wm != null;
 		wm.getDefaultDisplay().getMetrics(dm);
+		return dm;
+	}
+
+	public static int getScreenHeight(Context context) {
+		DisplayMetrics dm = getDisplayMetrics(context);
 		return dm.heightPixels;
 	}
 
-	public static float getSreenDensity(Context context) {
-		WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-		DisplayMetrics dm = new DisplayMetrics();
-		wm.getDefaultDisplay().getMetrics(dm);
+	public static float getScreenDensity(Context context) {
+		DisplayMetrics dm = getDisplayMetrics(context);
 		return dm.density;
 	}
 }
